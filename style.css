@@ -36,6 +36,13 @@ h1{
     text-align: center;
 }
 
+.wrap-fact{
+    display: flex;
+    min-height: 40vh;
+    justify-content: center;
+    align-items: center;
+}
+
 .fact-text{
     position: relative;
     padding: 2rem 1rem;
@@ -107,10 +114,9 @@ h1{
     border-radius: .25rem;
     padding: .5rem;
     margin: .5rem 0;
-
-    
-
 }
+
+
 .copyright{
     display: flex;
     font-size: 80%;
