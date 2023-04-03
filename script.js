@@ -15,8 +15,11 @@ async function customFetch(url) {
 }
 
 async function printRandomFact() {
+    output.innerHTML = 'Loading...';
+    regenerateFactButton.disabled = true;
     const fact = await customFetch(fetchUrl)
     output.innerHTML = fact.text;
+    regenerateFactButton.disabled = false;
 }
 
 
