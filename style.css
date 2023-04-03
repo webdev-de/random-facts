@@ -60,7 +60,8 @@ h1{
 .fact-text::before,
 .fact-text::after{
     position: absolute;
-    height: 70%;
+    height: 60%;
+    max-height: 30vw;
     aspect-ratio: 1;
     content: '';
     border: 2px solid white;
@@ -124,4 +125,41 @@ h1{
     justify-content: flex-end;
     padding: .5rem;
     align-items: flex-end;
+}
+
+.switch-lang{
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    position: relative;
+    cursor: pointer;
+    transform: scale(90%);
+    border-radius: .25rem;
+}
+
+.lang-slider{
+    position: absolute;
+    height: calc(100% - 4px);
+    width: calc(50% - 4px);
+    border: 2px solid white;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.8);
+    border-radius: .25rem;
+    left: 0;
+}
+
+.turn-right{
+    left: auto;
+    right: 0;
+}
+
+.main-lang,
+.secound-lang{
+    text-transform: uppercase;
+    width: 3rem;
+    text-align: center;
+    font-size: 90%;
+    cursor: pointer;
 }
